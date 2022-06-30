@@ -1,11 +1,13 @@
 import user from '../data/user.json'
-import { Profile } from "./Profile"
+import  Profile  from "./Profile"
 
-export const App = () => {
+const App = () => {
     return <div><Profile
-    username={user.username}
+        avatar={user.avatar}
+        username={user.username}
         tag={user.tag}
         location={user.location}
         src={user.avatar}
-        stats={user.stats}/></div>
-}
+        stats={user.stats} /></div>
+};
+export default App;
