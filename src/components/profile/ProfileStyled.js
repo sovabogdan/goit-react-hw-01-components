@@ -64,7 +64,7 @@ export const StatsList = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-between;
-  background-color: ${p => p.theme.colors.accent};
+  background-color: ${p => p.theme.colors.accentText};
   border-radius: ${p => p.theme.radii.normal};
 `;
 export const StatsItem = styled.li`
@@ -79,14 +79,15 @@ export const StatsItem = styled.li`
   :not(:last-child) {
     border-right: 1px solid rgb(253, 252, 252);
   }
+  :hover,
+    :focus{
+      background-color: ${p => p.theme.colors.accent};
+    }
 `;
 export const Label = styled.span`
   margin-bottom: ${p => p.theme.space[2]}px;
-  color: ${p => p.theme.colors.accentText};
-  :hover,
-  :focus {
     color: ${p => p.theme.colors.text};
-  }
+  
 `;
 
 export const Quantity = styled.span`

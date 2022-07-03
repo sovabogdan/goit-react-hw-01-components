@@ -3,8 +3,8 @@ export const theme = {
     white: '#fff',
     avatar: 'grey',
     text: '#2a2a2a',
-    accent: '#c5e8fc',
-    accentText: '#8ca8b8',
+    accent: '#91ea92',
+    accentText: '#58aa59',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
 

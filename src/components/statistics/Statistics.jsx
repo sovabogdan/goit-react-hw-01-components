@@ -7,7 +7,7 @@ import {
   Title,
   StatisticsList,
   Item,
-} from './StatisticsStyled';
+} from './StyledStatistics';
 
 export default function Statistics({ title, stats }) {
   const isTitle = { title };

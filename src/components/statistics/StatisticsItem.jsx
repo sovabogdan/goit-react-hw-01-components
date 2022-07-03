@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Label, Percentage } from './StatisticsStyled';
+import { Label, Percentage } from './StyledStatistics';
 
 export default function StatisticsItem({ label, percentage }) {
   return (
