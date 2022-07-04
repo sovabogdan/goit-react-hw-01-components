@@ -3,13 +3,13 @@ import { Column, Row } from './TransactionsStyled';
 
 export default function TransactionItem({ type, amount, currency, index }) {
   return (
-    <>
+    
       <Row>
         <Column>{type}</Column>
         <Column>{amount}</Column>
         <Column>{currency}</Column>
       </Row>
-    </>
+   
   );
 }
 
