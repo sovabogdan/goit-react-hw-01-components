@@ -3,27 +3,30 @@ import TransactionsItem from './TransactionsItem';
 import { Table, TableHead, Row, Column } from './Transactions.styled';
 
 const TransactionHistory = ({ items}) => {
-    return (
-        <Table>
-  <TableHead>
-    <Row>
-      <Column>Type</Column>
-      <Column>Amount</Column>
-      <Column>Currency</Column>
-    </Row>
-  </TableHead>
+   return (
+    <Table>
+      <TableHead>
+        <Row>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </Row>
+      </TableHead>
 
-        <tbody> {items.map(item => (<TransactionsItem
+      <tbody>
+        {items.map(item => (
+          <TransactionsItem
             key={item.id}
             type={item.type}
             amount={item.amount}
-            currency={item.currency}/>
-      
-  ))}
-  </tbody>
-</Table>
-    );
-};
+            currency={item.currency}
+          />
+        ))}
+      </tbody>
+    </Table>
+  );
+}
+
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(

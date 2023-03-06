@@ -8,7 +8,6 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       <Avatar
         src={avatar}
         alt="User avatar"
-        class="avatar"
       />
       <Name>{username}</Name>
       <Tag>@{tag}</Tag>
