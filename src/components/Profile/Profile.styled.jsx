@@ -5,11 +5,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 300px;
+width: 400px;
 margin:auto;
 margin-top: 100px;
+margin-bottom:50px;
 background-color: aliceblue;
 border-radius: 10px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 `;
 
 
@@ -23,7 +25,8 @@ margin: 40px;
 
 export const Avatar = styled.img`
 width:200px;
-height:200px;`;
+height:200px;
+border-radius:50%;`;
 
 
 export const Name = styled.p`
@@ -46,17 +49,23 @@ export const Stats = styled.ul`
 display: flex;
 justify-content: space-between;
 align-content: stretch;
-width: 100%;
-background-color:lightblue;`;
+width: 350px;
+
+margin-bottom:40px;
+background-color:lightblue;
+border-radius: 10px;
+`;
 
 
 export const StatsEl = styled.li`
 display: flex;
 flex-direction:column;
 align-items:center;
-width: 100px;
+width: 100%;
 padding:15px;
-border:1px solid #87CEEB;`;
+:not(:last-child) {
+    border-right: 1px solid aliceblue;
+`;
 
 
 export const Label = styled.span`
