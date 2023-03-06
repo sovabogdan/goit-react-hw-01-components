@@ -9,6 +9,7 @@ align-items: center;
 margin:auto;
 margin-bottom:40px;
 border-radius:10px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 background-color: aliceblue;`;
 
 
@@ -35,10 +36,16 @@ align-items:center;
 width: 100%;
 padding:15px;
 :not(:last-child) {
-    border-right: 1px solid aliceblue;`;
+    border-right: 1px solid aliceblue;
+      :hover,
+  :focus {
+    background-color: #1E90FF;
+  }`;
 
 
-export const Label = styled.span``;
+export const Label = styled.span`
+
+`;
 
 
 export const Percentage = styled.span``;

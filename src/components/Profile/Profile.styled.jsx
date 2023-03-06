@@ -64,7 +64,11 @@ align-items:center;
 width: 100%;
 padding:15px;
 :not(:last-child) {
-    border-right: 1px solid aliceblue;
+    border-right: 1px solid aliceblue;}
+      :hover,
+  :focus {
+    background-color: #1E90FF;
+  }
 `;
 
 
